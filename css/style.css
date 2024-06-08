@@ -198,6 +198,31 @@ main {
 }
 
 
+footer {
+    background-color: #5300C8;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+footer .titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+}
+
+footer .company {
+    font-weight: 200;
+}
+
 
 
 
