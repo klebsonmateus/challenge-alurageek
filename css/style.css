@@ -26,16 +26,84 @@ main {
 }
 
 .produtos {
-    background-color: red;
     width: 758px;
+    height: 1115px;
+    padding: 40px;
+}
+
+
+
+.produtos h2 {
+    font-family: var(--fonte-primaria);  
+    font-size: 24px;
+    text-align: center;
 }
 
 .produtos__cards {
     display: flex;
-    flex-direction: rox;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 78px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 15px;
+    box-shadow: -12px 10px 5.8px rgba(0, 0, 0, 0.25);
+    height: 971px;
+    overflow-y: auto;
+    scrollbar-color: #D6D6D6 transparent;
+    scrollbar-width: auto;
+    
 }
+
+
+.produtos__cards__card {
+    background-color: #5D04D9;
+    width: 196px;
+    height: 258px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: -5px 6px 3.3px rgba(0, 0, 0, 0.25);
+
+}
+
+.produtos__cards__card__img{
+    width: 176px;
+    height: 174px;
+}
+
+.produtos__cards__card__descricao {
+    width: 100%;
+    font-family: var(--fonte-secundaria);
+    font-size: 15px;
+    color: #FFF;
+}
+
+.produtos__cards__card__details {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--fonte-secundaria);
+    font-size: 15px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+
+
 
 .formulario {
     background-color: green;
     width: 472px;
+    padding: 40px;
+}
+
+.formulario h2 {
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
 }
