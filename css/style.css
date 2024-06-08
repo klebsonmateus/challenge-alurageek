@@ -16,3 +16,26 @@ header {
     justify-content: center;
     padding: 20px 0;
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin: 50px 30px;
+    padding: 60px 40px;
+}
+
+.produtos {
+    background-color: red;
+    width: 758px;
+}
+
+.produtos__cards {
+    display: flex;
+    flex-direction: rox;
+}
+
+.formulario {
+    background-color: green;
+    width: 472px;
+}
