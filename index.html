@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
         <img src="assets/hearts.png" alt="">
@@ -19,7 +21,8 @@
             <h2>MEUS PRODUTOS:</h2>
             <div class="produtos__cards">
                 <div class="produtos__cards__card">
-                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png" alt="Foto caneca Stormtrooper">
+                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png"
+                        alt="Foto caneca Stormtrooper">
                     <p class="produtos__cards__card__descricao">Stormtrooper</p>
 
                     <div class="produtos__cards__card__details">
@@ -41,7 +44,8 @@
                 </div>
 
                 <div class="produtos__cards__card">
-                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png" alt="Foto caneca Stormtrooper">
+                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png"
+                        alt="Foto caneca Stormtrooper">
                     <p class="produtos__cards__card__descricao">Stormtrooper</p>
 
                     <div class="produtos__cards__card__details">
@@ -63,7 +67,8 @@
                 </div>
 
                 <div class="produtos__cards__card">
-                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png" alt="Foto caneca Stormtrooper">
+                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png"
+                        alt="Foto caneca Stormtrooper">
                     <p class="produtos__cards__card__descricao">Stormtrooper</p>
 
                     <div class="produtos__cards__card__details">
@@ -85,7 +90,8 @@
                 </div>
 
                 <div class="produtos__cards__card">
-                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png" alt="Foto caneca Stormtrooper">
+                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png"
+                        alt="Foto caneca Stormtrooper">
                     <p class="produtos__cards__card__descricao">Stormtrooper</p>
 
                     <div class="produtos__cards__card__details">
@@ -107,7 +113,8 @@
                 </div>
 
                 <div class="produtos__cards__card">
-                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png" alt="Foto caneca Stormtrooper">
+                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png"
+                        alt="Foto caneca Stormtrooper">
                     <p class="produtos__cards__card__descricao">Stormtrooper</p>
 
                     <div class="produtos__cards__card__details">
@@ -129,7 +136,8 @@
                 </div>
 
                 <div class="produtos__cards__card">
-                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png" alt="Foto caneca Stormtrooper">
+                    <img class="produtos__cards__card__img" src="assets/stormtrooper.png"
+                        alt="Foto caneca Stormtrooper">
                     <p class="produtos__cards__card__descricao">Stormtrooper</p>
 
                     <div class="produtos__cards__card__details">
@@ -152,13 +160,34 @@
 
 
             </div>
-            
+
         </section>
 
         <section class="formulario">
             <h2>ADICIONAR PRODUTO:</h2>
+            <form class="formulario__form">
+                <div class="formulario__form__field">
+                    <input  type="text" placeholder="nome...">
+                </div>
+
+                <div class="formulario__form__field">
+                    <input  type="number" placeholder="valor...">
+                </div>
+
+                <div class="formulario__form__field">
+                    <input  type="file" id="imagem">
+                    <label for="imagem" class="formulario__form__field__imgLabel">imagem...</label>
+                </div>
+                
+                <div class="formulario__form_buttons">
+                    <button type="submit" class="formulario__form__buttons--btn-guardar btn">Guardar</button>
+                    <button type="reset" class="formulario__form__buttons--btn-limpar btn">Limpar</button>
+                </div>
+
+            </form>
         </section>
 
     </main>
 </body>
+
 </html>
