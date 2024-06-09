@@ -1,0 +1,21 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Stormtrooper",
+            "imagem_src": "assets/stormtrooper.png",
+            "imagem_alt": "Foto caneca Stormtrooper",
+            "valor": "60,00"
+            
+          },
+          {
+            "id": 2,
+            "nome": "Game Boy Classic",
+            "imagem_src": "assets/gameboy.png",
+            "imagem_alt": "Foto gameboy",
+            "valor": "60,00"
+            
+          }
+      
+    ]
+  }
