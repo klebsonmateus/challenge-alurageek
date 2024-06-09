@@ -28,7 +28,7 @@ main {
 }
 
 .produtos {
-    width: 758px;
+    max-width: 758px;
     height: 1115px;
     padding: 40px;
 }
@@ -36,7 +36,7 @@ main {
 
 
 .produtos h2 {
-    font-family: var(--fonte-primaria);  
+    font-family: var(--fonte-primaria);
     font-size: 24px;
     text-align: center;
 }
@@ -44,6 +44,7 @@ main {
 .produtos__cards {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     column-gap: 10px;
     row-gap: 78px;
     flex-wrap: wrap;
@@ -54,7 +55,7 @@ main {
     overflow-y: auto;
     scrollbar-color: #D6D6D6 transparent;
     scrollbar-width: auto;
-    
+
 }
 
 
@@ -73,7 +74,7 @@ main {
 
 }
 
-.produtos__cards__card__img{
+.produtos__cards__card__img {
     width: 176px;
     height: 174px;
 }
@@ -109,7 +110,7 @@ main {
     font-family: var(--fonte-primaria);
     font-size: 24px;
     text-align: center;
-    
+
 }
 
 .formulario__form {
@@ -122,14 +123,14 @@ main {
 .formulario__form_buttons {
     display: flex;
     flex-direction: row;
-    
+
 }
 
 .formulario__form__field input[type="text"],
 .formulario__form__field input[type="number"],
 .formulario__form__field input[type="file"] {
     border: 3px solid #03318C;
-    border-radius: 30px ;
+    border-radius: 30px;
     width: 392px;
     height: 58px;
     padding: 10px 10px 9px 14px;
@@ -137,13 +138,13 @@ main {
     font-size: 16px;
     font-weight: 600;
     color: #03318C;
-    
+
 }
 
 .formulario__form__field .formulario__form__field__imgLabel {
     display: inline-block;
     border: 3px solid #03318C;
-    border-radius: 30px ;
+    border-radius: 30px;
     width: 392px;
     height: 58px;
     padding: 14px 10px 9px 14px;
@@ -154,14 +155,14 @@ main {
     cursor: pointer;
 }
 
-.formulario__form__field input[type="file"]{
+.formulario__form__field input[type="file"] {
     display: none;
 }
 
 
 
 
-.formulario__form__field [type="text"]::placeholder, 
+.formulario__form__field [type="text"]::placeholder,
 .formulario__form__field [type="number"]::placeholder {
     font-family: var(--fonte-secundaria);
     font-size: 16px;
@@ -169,11 +170,11 @@ main {
     color: #03318C;
 }
 
-.formulario__form_buttons{
+.formulario__form_buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
 .btn {
@@ -186,7 +187,7 @@ main {
 }
 
 .btn[type="submit"] {
-    
+
     font-weight: 500;
     background-color: #03318C;
     color: #FFF;
@@ -223,7 +224,43 @@ footer .company {
     font-weight: 200;
 }
 
+@media (max-width: 1400px) {
+    .produtos {
+        max-width: 538px;
+    }
+}
 
+@media (max-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
+    .produtos {
+        padding: 0;
+    }
 
+    .produtos__cards {
+        padding: 0;
+        box-shadow: -12px 10px 5.8px rgba(0, 0, 0, 0.25);
 
+    }
+
+    .formulario {
+        width: 430px;
+    }
+
+    .formulario__form__field input[type="text"],
+    .formulario__form__field input[type="number"],
+    .formulario__form__field input[type="file"],
+    .formulario__form__field .formulario__form__field__imgLabel {
+        width: 350px;
+    }
+
+    .btn {
+        width: 164px;
+    }
+}
